@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4342d28a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <title>Moviepedia</title>
+
+    <style>
+      .datadiv{
+          height:420px ;
+      }
+      .non{
+          visibility: hidden;
+      }
+      body{
+          color:black;
+        background-repeat: no-repeat;
+    background-size:cover;
+    /*overflow-x: 10%;*/
+    margin: 0px;
+    position: sticky;
+    align-items: center;
+    text-align: center;
+    height: 555px;
+    width: 100%;
+        
+    /* background-attachment: fixed; */
+    background-position: center center;
+
+   
+      }
+      .nav{
+          height: 51px;
+          background-color: aqua;
+      }
+      .movietitle{
+        font-family: 'Josefin Sans', sans-serif;
+          color:yellow;
+      }
+      .year{
+          font-size: 19px;
+          color:rgb(34, 221, 143);
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .myrating{
+        display: inline;
+        background-color: rgb(10, 43, 49);
+    }
+    .g{
+        background-color: rgb(38, 49, 53);
+        display: inline;
+    }
+    .postermain{
+        align-items: center;
+    }
+   .nav{
+       color:white;
+   }
+   .heading{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   input{
+       background-color: white;
+       border:solid 30%;
+   }
+.movieelemet{
+    width: 20px;
+    line-height: 121px;
+    background-color: white;
+}
+
+.form-style-5{
+    background: transparent;
+    backdrop-filter: blur(8px);
+  }
+    /* position: relative;
+    left: 3px; */
+   
+    /* dffdfdfdf
+    dfdfd
+    font-display: fallback;dfdf
+    fdfdfdfd
+  
+    df */
+  
+    /* contact us from */
+    .form-style-5{
+      max-width: 500px;
+      padding: 10px 20px;
+      /* background: #f4f7f8; */
+      margin: 10px auto;
+      padding: 20px;
+      /* background: #f4f7f8; */
+      border-radius: 8px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .form-style-5 fieldset{
+      border: none;
+  }
+  .form-style-5 legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+  }
+  .form-style-5 label {
+      display: block;
+      margin-bottom: 8px;
+  }
+  .form-style-5 input[type="text"],
+  .form-style-5 input[type="date"],
+  .form-style-5 input[type="datetime"],
+  .form-style-5 input[type="email"],
+  .form-style-5 input[type="number"],
+  .form-style-5 input[type="search"],
+  .form-style-5 input[type="time"],
+  .form-style-5 input[type="url"],
+  .form-style-5 textarea,
+  .form-style-5 select {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: rgba(33, 167, 0, 0.1);
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      margin: 0;
+      outline: 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box; 
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; 
+      background-color: #004e11;
+      color:#006426;
+      -webkit-box-shadow: 0 1px 0 rgba(231, 28, 28, 0.03) inset;
+      box-shadow: 0 1px 0 rgba(45, 69, 149, 0.03) inset;
+      margin-bottom: 30px;
+  }
+  .form-style-5 input[type="text"]:focus,
+  .form-style-5 input[type="date"]:focus,
+  .form-style-5 input[type="datetime"]:focus,
+  .form-style-5 input[type="email"]:focus,
+  .form-style-5 input[type="number"]:focus,
+  .form-style-5 input[type="search"]:focus,
+  .form-style-5 input[type="time"]:focus,
+  .form-style-5 input[type="url"]:focus,
+  .form-style-5 textarea:focus,
+  .form-style-5 select:focus{
+      background: #004e1e;
+    color:#d7ffe0;
+  }
+  .form-style-5 select{
+      -webkit-appearance: menulist-button;
+      height:35px;
+  }
+  .form-style-5 .number {
+      background: #004910;
+      color: rgb(253, 245, 245);
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(51, 199, 83, 0.2);
+      border-radius: 15px 15px 15px 0px;
+  }
+  
+
+   
+  
+
+
+    </style>
+</head>
+<body background="https://c4.wallpaperflare.com/wallpaper/883/883/818/movie-collage-wallpaper-preview.jpg">
+    <h1 class="heading" style="background-color: rgb(41, 214, 133); align-content: left;">Moviepedia❤️</h1>
+
+    <div class="form-style-5">
+            <form name="myform">
+            <fieldset>
+            <input type="text" name="datainput" placeholder="Your Name *">
+            
+            <input class="btn btn-outline-primary" type="button" value="Search" onClick="main()" />
+        </fieldset>
+            </div>
+    <div class="container mainwin">
+
+    <div class="row">
+      
+         
+    <div class="col col-lg-2 col-md-2 poster">
+   
+    </div>
+
+
+    
+    <div class="col col-lg-9 col-md-8  disc">
+        <center>
+          <div class="container gg">
+             
+          </div>
+   
+</center>
+</div>
+
+</div>
+</div>
+
+
+    <script>
+        async function main(){
+            let moviename=String(myform.datainput.value)
+            let api_key="http://www.omdbapi.com/?t="+moviename+"&apikey=c8151565"
+
+            let requests=await fetch(api_key)
+            let data=await requests.json()
+            console.log(data)
+            console.log(data.Year)
+            main2(data)
+        }
+        function main2(data){
+            let gettable=document.querySelector(".gg");
+            let getposter=document.querySelector(".poster")
+            let postermain=data.Poster
+            let title=document.querySelector(".movietitle")
+            gettable.innerHTML="<h1 class='movietitle'>"+data.Title+"</h1>" 
+            // gettadble.innerHTML='<tr><td>Title :</td><td>'+data.Title+'</td></tr><tr><td>Year :</td><td>'+data.Year+'</td></tr></tr><tr><td>ImdbRating  :</td><td>'+data.imdbRating+'</td></tr><tr><td>Released</td><td>'+data.Released+'</td></tr></tr><tr><td>Runtime :</td><td>'+data.Runtime+'</td></tr></tr><tr><td>Genre :</td><td>'+data.Genre+'</td></tr></tr><tr><td>Director :</td><td>'+data.Director+'</td></tr></tr><tr><td>Actors :</td><td>'+data.Actors+'</td></tr></tr><tr><td>Language :</td><td>'+data.Language+'</td></tr></tr><tr><td>Country :</td><td>'+data.Country+'</td></tr></tr><tr><td>BoxOffice :</td><td>'+data.BoxOffice+'</td></tr></tr>';
+            getposter.innerHTML='<center><img class="postermain" src='+postermain+'style="aling:left;"></center>'
+            gettable.innerHTML="<h1 class='movietitle'>"+data.Title+"</h>"+
+            "<p class='year'><strong><span>Year:</span></strong>"+data.Year+"<span class='non'>m</span><span class='myrating'>imdbRating:"+data.imdbRating    +"</span></p>"+
+            "<p class='year'><strong><span>Released:</span></strong>"+data.Released+"</span></p>"+
+            "<p class='year gen'><strong><span>Genre:</span></strong>"+data.Genre+"</p>"+
+            "<p class='year'><strong><span>Writer:</span></strong>"+data.Writer+"</p>"+
+            "<p class='year'><strong><span>Actors:</span></strong>"+data.Actors+"</p>"+
+            " <div class=container><p class='year plot'><strong><span class='non'></span><strong><span>Country:</span></strong>"+data.Country+"<span class='non'>a</span><strong>Language</strong>"+data.Language+"</p></div>" +
+            "<p class='year'<span>Awards <i class='fa-solid fa-trophy'>: </i></span></string>"+data.Awards+"</p>"  
+            document.querySelector(".mainwin").style="backdrop-filter: blur(19px);"
+        }
+        
+    </script>
+
+    </script>
+</body>
+</html>
