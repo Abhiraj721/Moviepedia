@@ -48,16 +48,25 @@
       }
       .movietitle{
         font-family: 'Josefin Sans', sans-serif;
-          color:yellow;
+          color:rgb(0, 0, 0);
+          display: inline;
+          background-color: whitesmoke;
+        
+          /* background-color: white; */
+      
       }
-      .year{
-          font-size: 19px;
-          color:rgb(34, 221, 143);
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+      .year {
+    font-size: 19px;
+    color: rgb(251, 166, 126);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+    
     .myrating{
         display: inline;
-        background-color: rgb(10, 43, 49);
+        background-color: rgb(37, 33, 33);
     }
     .g{
         background-color: rgb(38, 49, 53);
@@ -178,7 +187,7 @@
       text-shadow: 0 1px 0 rgba(51, 199, 83, 0.2);
       border-radius: 15px 15px 15px 0px;
   }
-  
+
 
    
   
@@ -255,12 +264,12 @@
             gettable.innerHTML="<h1 class='movietitle'>"+data.Title+"</h1>" 
             // gettadble.innerHTML='<tr><td>Title :</td><td>'+data.Title+'</td></tr><tr><td>Year :</td><td>'+data.Year+'</td></tr></tr><tr><td>ImdbRating  :</td><td>'+data.imdbRating+'</td></tr><tr><td>Released</td><td>'+data.Released+'</td></tr></tr><tr><td>Runtime :</td><td>'+data.Runtime+'</td></tr></tr><tr><td>Genre :</td><td>'+data.Genre+'</td></tr></tr><tr><td>Director :</td><td>'+data.Director+'</td></tr></tr><tr><td>Actors :</td><td>'+data.Actors+'</td></tr></tr><tr><td>Language :</td><td>'+data.Language+'</td></tr></tr><tr><td>Country :</td><td>'+data.Country+'</td></tr></tr><tr><td>BoxOffice :</td><td>'+data.BoxOffice+'</td></tr></tr>';
             getposter.innerHTML='<center><img class="postermain" src='+postermain+'style="aling:left;"></center>'
-            gettable.innerHTML="<h1 class='movietitle'>"+data.Title+"</h>"+
+            gettable.innerHTML="<h1 class='movietitle'>"+data.Title+"</h1>"+
             "<p class='year'><strong><span>Year:</span></strong>"+data.Year+"<span class='non'>m</span><span class='myrating'>imdbRating:"+data.imdbRating    +"</span></p>"+
-            "<p class='year'><strong><span>Released:</span></strong>"+data.Released+"</span></p>"+
-            "<p class='year gen'><strong><span>Genre:</span></strong>"+data.Genre+"</p>"+
-            "<p class='year'><strong><span>Writer:</span></strong>"+data.Writer+"</p>"+
-            "<p class='year'><strong><span>Actors:</span></strong>"+data.Actors+"</p>"+
+            "<p class='year r'><strong><span>Released:</span></strong>"+data.Released+"</span></p>"+
+            "<p class='year g'><strong><span>Genre:</span></strong>"+data.Genre+"</p>"+
+            "<p class='year w'><strong><span>Writer:</span></strong>"+data.Writer+"</p>"+
+            "<p class='year a'><strong><span>Actors:</span></strong>"+data.Actors+"</p>"+
             " <div class=container><p class='year plot'><strong><span class='non'></span><strong><span>Country:</span></strong>"+data.Country+"<span class='non'>a</span><strong>Language</strong>"+data.Language+"</p></div>" +
             "<p class='year'<span>Awards <i class='fa-solid fa-trophy'>: </i></span></string>"+data.Awards+"</p>"  
             document.querySelector(".mainwin").style="backdrop-filter: blur(19px);"
@@ -271,3 +280,4 @@
     </script>
 </body>
 </html>
+<!-- sdsd -->
