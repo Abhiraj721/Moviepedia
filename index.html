@@ -18,6 +18,8 @@
       }
       .non{
           visibility: hidden;
+      }h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
       body{
           color:black;
@@ -35,6 +37,10 @@
     background-position: center center;
 
    
+      }
+      .credits{
+          height: 167px;
+          background-color: rgb(26, 20, 22);
       }
       .nav{
           height: 51px;
@@ -64,7 +70,9 @@
        color:white;
    }
    .heading{
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    backdrop-filter: blur(8px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    }
    input{
        background-color: white;
@@ -174,12 +182,15 @@
 
    
   
-
+.row .col-4 a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
 
     </style>
 </head>
 <body background="https://c4.wallpaperflare.com/wallpaper/883/883/818/movie-collage-wallpaper-preview.jpg">
-    <h1 class="heading" style="background-color: rgb(41, 214, 133); align-content: left;">Moviepedia❤️</h1>
+    <h1 class="heading" style="background-color: transparent; align-content: left;">Moviepedia❤️</h1>
 
     <div class="form-style-5">
             <form name="myform">
@@ -211,7 +222,19 @@
 
 </div>
 </div>
-
+<br>
+<div class="container-fluid credits">
+    <h3 style="color: antiquewhite;">Made with ❤️ by Abhiraj</h3>
+    <br>
+    <div class="row">
+        <div class="col-4"><button class="btn btn-outline-info" ><i class="fa-solid fa-code-simple"></i><a class="mylo" href="http://abhiraj.atwebpages.com/">       My Portfolio Website🧑‍💻</button></a></div>
+        <div class="col-4"><button class="btn btn-outline-info"><i class="fa-brands fa-instagram-square"></i><a href="https://www.instagram.com/astroindian/">       INSTAGRAM</button></a></div>
+        <div class="col-4"><button value="Lin" type="button" class="btn btn-outline-info">
+     
+     
+            <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/abhiraj-bhosle-694a72217/">       LINKDKIN</button></a></div>
+    </div>
+    </div>
 
     <script>
         async function main(){
